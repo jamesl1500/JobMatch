@@ -1,0 +1,455 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Bootstrap
+@import "bootstrap/scss/bootstrap";
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #eee;
+}
+
+// Website config
+.website{
+
+    .website-hold{
+        margin-top: 70px;
+
+        .website-page-title{
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+            border-bottom: 1px solid #aaa;
+
+            background: white;
+
+            h1{
+                font-size: 1.4rem;
+                font-weight: 600;
+                margin: 0px;
+            }
+        }
+    }
+}
+
+.box{
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+    &.box-centered{
+        margin-top: 50px;
+    }
+}
+
+// Form group
+.form-group{
+    margin-bottom: 20px;
+
+    .logo-img{
+        width: 100px;
+        height: 100px;
+        margin: 0px auto;
+        display: block;
+    }
+
+    label{
+        font-weight: 600;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"], textarea{
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #aaa;
+        border-radius: 5px;
+    }
+
+    button.btn{
+        padding: 10px 20px;
+        border: 0px;
+        border-radius: 5px;
+        background: #000;
+        color: white;
+        font-weight: 600;
+
+        &:hover{
+            background: #333;
+        }
+    }
+
+    &:last-child{
+        margin-bottom: 0px;
+    }
+}
+
+// Header
+.header{
+    width: 100%;
+    height: 70px;
+
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1000;
+
+    background-color: #fff;
+    border-bottom: 1px solid #aaa;
+
+    .header-inner{
+
+        .header-row{
+
+            .header-branding{
+
+                a{
+                    text-decoration: none;
+                    color: #000;
+
+                    h2{
+                        font-size: 1.5rem;
+                        font-weight: 600;
+
+                        padding-top: 18px;
+                    }
+                }
+            }
+
+            .header-nav{
+
+                .nav{
+                    justify-content: center;
+
+                    ul{
+                        list-style: none;
+                        padding: 0px;
+                        margin: 0px;
+
+                        text-align: center;
+
+                        li{
+                            display: inline-block;
+                            margin-right: 20px;
+                            padding-top: 20px;
+
+                            height: 70px;
+
+                            &.active, &:hover{
+                                border-bottom: 3px solid #000;
+                            }
+
+                            a{
+                                text-decoration: none;
+                                color: #000;
+                                font-size: 1rem;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .header-actions{
+                text-align: right;
+                
+                button.btn{
+                    margin-top: 15px;
+                    background: white;
+                    border: 2px solid #000;
+                    color: #000;
+
+                    font-weight: 600;
+
+                    &:hover{
+                        background: #000;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Footer
+
+// Button config
+a.btn, button{
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+// Page config
+.page{
+    margin-top: 50px;
+}
+
+// Page Navigation
+.page-navigation{
+    background: #fff;
+    border-bottom: 1px solid #aaa;
+    height: 70px;
+
+    .container{
+
+        .page-navigation-list{
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin: 0px;
+
+            li{
+                display: inline-block;
+                margin-right: 10px;
+                height: 50px;
+
+                &.active, &:hover{
+                    border-bottom: 2px solid #000;
+                }
+
+                a{
+                    text-decoration: none;
+                    color: #000;
+                    font-weight: 600;
+                    padding: 10px 20px;
+                    background: #fff;
+
+                }
+            }
+        }
+    }
+}
+
+// View board
+.view-board-banner{
+    background: #000;
+    color: white;
+    min-height: 300px;
+    width: 100%;
+
+    background-size: cover;
+    background-position: center;
+
+    .view-board-banner-overlay{
+        background: rgba(0, 0, 0, 0.5);
+        height: 100%;
+        width: 100%;
+
+        .view-board-banner-info{
+
+            .banner-info-img{
+                padding-top: 50px;
+
+                img{
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                    display: block;
+                    margin: 0px auto;
+
+                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+                }
+            }
+
+            .banner-info-text{
+                padding-top: 20px;
+
+                h1{
+                    font-size: 2rem;
+                    font-weight: 600;
+                    text-align: center;
+                    margin: 0px;
+                }
+
+                p{
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                    text-align: center;
+                    margin-top: 10px;
+                }
+            }
+
+            .banner-info-actions{
+                padding-top: 20px;
+                text-align: center;
+
+                padding-bottom: 50px;
+
+                a{
+                    padding: 10px 20px;
+                    border-radius: 5px;
+                    font-weight: 600;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.view-board-page{
+
+    .page-inner{
+
+        .left-filters-view{
+
+            .box{
+
+                .box-header{
+                    padding-bottom: 20px;
+
+                    h2{
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        margin: 0px;
+                    }
+                }
+            }
+        }
+
+        .view-jobs-middle{
+
+            .no-jobs{
+                text-align: center;
+                padding-bottom: 50px;
+
+                h2{
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                }
+
+                p{
+                    font-size: 1rem;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+// My Boards Page
+.my-boards-page{
+
+    .middle-boards{
+
+        .inner-middle-boards{
+
+            .board{
+                background: white;
+                margin-bottom: 20px;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+
+                .board-top-banner{
+                    background: #000;
+                    color: white;
+                    border-radius: 10px 10px 0px 0px;
+                    height: 200px;
+
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                .board-inner{
+                    padding: 20px;
+
+                    .board-logo{
+                        position: relative;
+                        top: -100px;
+                        margin-bottom: -100px;
+
+                        img{
+                            width: 150px;
+                            height: 150px;
+                            border-radius: 50%;
+                            display: block;
+                            margin: 0px auto;
+                        }
+                    }
+
+                    .board-info{
+                        padding-top: 15px;
+
+                        h2{
+                            font-size: 1.5rem;
+                            font-weight: 600;
+                            margin: 0px;
+                            text-align: center;
+                        }
+
+                        p{
+                            font-size: 1rem;
+                            font-weight: 400;
+                            margin-top: 10px;
+                            text-align: center;
+                        }
+                    }
+
+                    .board-stats{
+                        display: flex;
+                        justify-content: center;
+                        padding-bottom: 20px;
+
+                        .board-stats-item{
+                            padding: 10px;
+                            text-align: center;
+
+                            &:nth-child(2){
+                                border-left: 1px solid #aaa;
+                            }
+
+                            h3{
+                                font-size: 1.2rem;
+                                font-weight: 600;
+                                margin: 0px;
+                            }
+
+                            p{
+                                font-size: 1rem;
+                                font-weight: 400;
+                                margin: 0px;
+                            }
+                        }
+                    }
+
+                    .board-actions{
+                        display: flex;
+                        justify-content: center;
+
+                        a{
+                            width: 100%;
+
+                            &:nth-child(2){
+                                margin-left: 10px;
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .no-boards{
+                text-align: center;
+                padding-top: 50px;
+                padding-bottom: 50px;
+
+                h2{
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                }
+
+                p{
+                    font-size: 1rem;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
